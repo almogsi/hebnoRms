@@ -1,0 +1,15 @@
+Package: hebnoRms
+Type: Package
+Title: Affect Norms for Hebrew
+Version: 0.1.0
+Date: 2020-06-05
+Authors@R: person("Almog", 
+         "Simchon", 
+         email = "almog.si@gmail.com",
+         role = c("aut", "cre"))
+Description: hebnoRms is designed to produce affect norms (i.e., valence and arousal) for more than 22k hebrew words
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends:
+	stringr
