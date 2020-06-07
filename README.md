@@ -7,7 +7,7 @@ It was built on E-Millim (Armony-Sivan & Cojocaru, 2013) and expanded using fast
 Download and Install
 --------------------
 
-You can install TATE with:
+You can install hebnoRms with:
 
     # install.packages("devtools")
     devtools::install_github("almogsi/hebnoRms")
