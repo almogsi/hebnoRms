@@ -1,7 +1,6 @@
-hebnoRms: Affect Norms for Hebrew
-=====================================
+# hebnoRms: Affect Norms for Hebrew <img src="man/figures/logo.png" align="right" width="120" />
 
-`hbnoRms` provides affect norms (valence and arousal) for 22k hebrew words.
+`hbnoRms` provides affect norms (valence and arousal) for up to 1.4M hebrew words.
 It was built on E-Millim (Armony-Sivan,Cojocaru, & Babkoff, 2013) and expanded using fasttext (Joulin et al., 2016) and the SVLM Hebrew Wikipedia Corpus (Silber-Varod, Latin, & Moyal, 2017).
 
 Download and Install
