@@ -1,31 +1,30 @@
 # hebnoRms: Affect Norms for Hebrew <img src="man/figures/logo.png" align="right" width="120" />
 
 `hbnoRms` provides affect norms (valence and arousal) for up to 1.4M hebrew words.
-It was built on E-Millim (Armony-Sivan,Cojocaru, & Babkoff, 2013) and expanded using fasttext (Joulin et al., 2016) and the SVLM Hebrew Wikipedia Corpus (Silber-Varod, Latin, & Moyal, 2017).
+It was built on E-Millim (Armony-Sivan et al., 2013) and expanded using fasttext (Joulin et al., 2016) and the SVLM Hebrew Wikipedia Corpus (Silber-Varod et al., 2017).
 
 Download and Install
 --------------------
 
 You can install hebnoRms with:
 
-    # install.packages("devtools")
-    devtools::install_github("almogsi/hebnoRms")
+    # install.packages("remotes")
+    remotes::install_github("almogsi/hebnoRms")
 
 Examples
 --------
 
     library(hebnoRms)
 
-    heb_norms("רצח") # Norms of valence and arousal
+    get_valence("בדד אלך גם תפילה אין לי")
 
-    ##   Valence   Arousal  
-    ##      2.32      8.07      
-    
-    
-    heb_norms("אהבה") # Norms of valence and arousal
+    ##   [1] 5.27  
+     
 
-    ##   Valence   Arousal  
-    ##      7.00      7.97 
+    get_valence("בדד אלך גם תפילה אין לי", long = TRUE) #use large corpus (1.4M tokens)
+
+    ##   [1] 5.13       	
+    
 
     
 References

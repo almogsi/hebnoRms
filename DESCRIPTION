@@ -18,5 +18,4 @@ Imports: Rdpack,
 		data.table
 RdMacros: Rdpack
 RoxygenNote: 7.1.0
-VignetteBuilder: knitr
 
