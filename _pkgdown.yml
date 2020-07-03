@@ -1,0 +1,8 @@
+authors:
+  Almog Simchon:
+    href: https://almogsi.com
+
+template:
+  params:
+    bootswatch: cosmo
+
