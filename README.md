@@ -1,7 +1,15 @@
 # hebnoRms: Affect Norms for Hebrew <img src="man/figures/logo.png" align="right" width="120" />
 
-`hebnoRms` provides affect norms (valence and arousal) for up to 1.4M hebrew words.
+`hebnoRms` provides affect norms (valence and arousal; ranging from 1 to 9) for up to 1.4M hebrew words.
 It was built on E-Millim (Armony-Sivan et al., 2013) and expanded using fasttext (Joulin et al., 2016) and the SVLM Hebrew Wikipedia Corpus (Silber-Varod et al., 2017).
+
+
+Hebrew is a morphologically rich language, an as such it makes relativly simple NLP tasks more challenging than in English. 
+
+`hebnoRms` takes a heuristic approach, instead of parsing every single word, it overcomes with large lexica (22K and 1.4M) 
+that includes separate values for each token, even if the target word is the same [*samaxti* (I was *happy*) $\neq$  *esmax* (I will be *happy*)].
+
+Please note that using the large lexicon is significantly  slower than the smaller one.
 
 Download and Install
 --------------------
@@ -21,10 +29,28 @@ Examples
     ##   [1] 5.27  
      
 
-    get_valence("בדד אלך גם תפילה אין לי", long = TRUE) #use large corpus (1.4M tokens)
+    get_valence("בדד אלך גם תפילה אין לי", long = TRUE) #use large lexicon (1.4M tokens)
 
     ##   [1] 5.13       	
     
+
+    get_valence("יום הולדת חגיגה נחמדת")
+
+    ##   [1] 7.02  
+     
+
+    get_valence("יום הולדת חגיגה נחמדת", long = TRUE) #use large lexicon (1.4M tokens)
+
+    ##   [1] 7.01 
+	
+	
+Validation
+----------
+
+It was validated on the *Neural Sentiment Analyzer for Modern Hebrew* (Amram, Ben-David, & Tsarfaty, 2018), resulting in *Cohen's d* = 0.95 and 
+*Cohen's d* = 1.06 for the small and large lexica respectively.
+
+<img src="man/figures/fig_plot.png" align="center" width="600"/>
 
     
 References
