@@ -34,8 +34,11 @@ it overcomes with large lexica (22K and 1.4M) that includes separate values for 
 `hebnoRms` It was built on E-Millim [@Armony-Sivan2013-zx] and expanded using word vectors from fasttext [@joulin2016fasttext; @grave2018learning] and the SVLM Hebrew Wikipedia Corpus [@Silber-Varod2017-xp].
 fasttext was chosen as it incorporates in its vectors subword information that corresponds to morphological inflections, suitable to morphologically rich languages.
 
-The pacakge was validated on the *Neural Sentiment Analyzer for Modern Hebrew* [@amram2018representations], 
-resulting in Cohen’s d = 0.95 and Cohen’s d = 1.06 for the small and large lexica respectively \autoref{fig:example}. 
+Pre-trained vectors were extracted using `fastertext` [@bojanowski2016enriching] and the norms were extrapolated by fitting a regression model with elastic net regularization
+in the `caret` package [@kuhn2008building]. 5-fold cross validation reached  *r* = .74 in valence and *r* = .64 in arousal.
+
+The valence produced by the pacakge was validated on the *Neural Sentiment Analyzer for Modern Hebrew* [@amram2018representations], 
+resulting in Cohen’s *d* = 0.95 and Cohen’s *d* = 1.06 for the small and large lexica respectively \autoref{fig:example}. 
 
 ![Package validation.\label{fig:example}](./man/figures/fig_plot.png)
 
