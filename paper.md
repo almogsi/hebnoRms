@@ -12,7 +12,6 @@ authors:
 affiliations:
  - name: Department of Psychology, Ben-Gurion University of the Negev
    index: 1
- - name: Institution Name
 date: 05 July 2020
 bibliography: paper.bib
 ---
