@@ -6,7 +6,7 @@ tags:
   - sentiment analysis
   - hebrew
 authors:
-  - name: Almog Simchon^
+  - name: Almog Simchon^[Custom footnotes for e.g. denoting who the corresspoinding author is can be included like this.]
     orcid: 0000-0003-2629-2913
 	affiliation: 1
 affiliations:
