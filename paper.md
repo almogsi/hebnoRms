@@ -8,7 +8,7 @@ tags:
 authors:
   - name: Almog Simchon^
     orcid: 0000-0003-2629-2913
- affiliation: 1
+	affiliation: 1
 affiliations:
  - name: Department of Psychology, Ben-Gurion University of the Negev
    index: 1
