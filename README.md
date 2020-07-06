@@ -1,5 +1,7 @@
 # hebnoRms: Affect Norms for Hebrew <img src="man/figures/logo.png" align="right" width="120" />
 
+[![DOI](https://zenodo.org/badge/269467864.svg)](https://zenodo.org/badge/latestdoi/269467864)
+
 `hebnoRms` provides affect norms (valence and arousal; ranging from 1 to 9) for up to 1.4M hebrew words.
 It was built on E-Millim (Armony-Sivan et al., 2013) and expanded using fasttext (Joulin et al., 2016) and the SVLM Hebrew Wikipedia Corpus (Silber-Varod et al., 2017).
 
