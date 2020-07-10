@@ -5,4 +5,5 @@ authors:
 template:
   params:
     bootswatch: cosmo
+    ganalytics: UA-103600450-3
 
